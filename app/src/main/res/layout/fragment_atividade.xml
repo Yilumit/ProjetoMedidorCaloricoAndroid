@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentAtividadeUsuario"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AtividadeFragment">
+
+    <EditText
+        android:id="@+id/etNomeAtividade"
+        android:layout_width="331dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginBottom="60dp"
+        android:ems="10"
+        android:hint="@string/nome_atividade"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/etMETAtividade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etIdAtivdade"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etIdAtivdade"
+        android:layout_width="165dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:hint="@string/id_atividade"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBuscarAtividade"
+        app:layout_constraintEnd_toStartOf="@+id/btnBuscarAtividade"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnBuscarAtividade"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etMETAtividade"
+        android:layout_width="71dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginBottom="80dp"
+        android:ems="10"
+        android:hint="@string/met"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroup2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etIdAtivdade"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/tvMETAtividade"
+        android:layout_width="312dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:hint="@string/met_desc"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/etMETAtividade"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeAtividade"
+        app:layout_constraintVertical_bias="0.342" />
+
+    <TextView
+        android:id="@+id/tvTituloAtividade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:hint="@string/minhas_atividades"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnBuscarAtividade"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBuscarAtividade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="64dp"
+        android:hint="@string/buscar"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloAtividade" />
+
+    <Button
+        android:id="@+id/btnInserirAtividade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:hint="@string/inserir"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/btnExcluirAtividade"
+        app:layout_constraintTop_toBottomOf="@+id/etDescricaoAtividade" />
+
+    <Button
+        android:id="@+id/btnModificarAtividade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="32dp"
+        android:hint="@string/modificar"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnListarAtividade"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnExcluirAtividade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="32dp"
+        android:hint="@string/excluir"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/tvSaidaAtividade"
+        app:layout_constraintTop_toBottomOf="@+id/btnInserirAtividade" />
+
+    <Button
+        android:id="@+id/btnListarAtividade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/listar"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tvSaidaAtividade"
+        app:layout_constraintEnd_toEndOf="@+id/btnModificarAtividade" />
+
+    <EditText
+        android:id="@+id/etDescricaoAtividade"
+        android:layout_width="343dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/descricao"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloAtividade" />
+
+    <TextView
+        android:id="@+id/tvSaidaAtividade"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="1dp"
+        android:scrollbars="vertical"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnExcluirAtividade" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="378dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginBottom="120dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btnExcluirAtividade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvTituloAtividade"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/rbPersonalizadaAtividade"
+            android:layout_width="188dp"
+            android:layout_height="48dp"
+            android:hint="@string/exercicio_academia"
+            android:textColorHint="@color/black" />
+
+        <RadioButton
+            android:id="@+id/rbCalculadaAtividade"
+            android:layout_width="205dp"
+            android:layout_height="48dp"
+            android:hint="@string/atividadeCalculada"
+            android:textColorHint="@color/black" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

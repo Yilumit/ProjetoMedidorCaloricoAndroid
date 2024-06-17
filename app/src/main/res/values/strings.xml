@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Medidor Calórico</string>
+    <string name="minhas_atividades">Atividades</string>
+    <string name="outras_atividades">Calcular Calorías</string>
+    <string name="Usuario">Usuários</string>
+    <string name="hello_inicio">Medidor Calórico de Atividades Físicas</string>
+    <string name="nome">Nome</string>
+    <string name="nome_atividade">Nome da Atividade</string>
+    <string name="id_usuario">ID de usuário</string>
+    <string name="id_atividade">ID de Atividade</string>
+    <string name="peso">Seu Peso</string>
+    <string name="idade">Idade</string>
+    <string name="buscar">Buscar</string>
+    <string name="inserir">Inserir</string>
+    <string name="modificar">Modificar</string>
+    <string name="excluir">Excluir</string>
+    <string name="listar">Listar</string>
+    <string name="met">MET</string>
+    <string name="met_desc">MET = Equivalente Metabólico da Tarefa \n(Gasto energético da atividade física executada)</string>
+    <string name="descricao">Descrição</string>
+    <string name="tempo">Tempo (em minutos)</string>
+    <string name="calcular">Calcular</string>
+    <string name="calorias_gastas">Calorias gastas na atividadeFisica: </string>
+    <string name="atividadeCalculada">Atividade já calculada</string>
+    <string name="exercicio_academia">Exercício Pesonalizado</string>
+    <string name="saida_calorias">Você gastou aproximadamente:</string>
+</resources>

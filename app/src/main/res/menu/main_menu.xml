@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_calcular_calorias"
+        android:title="@string/outras_atividades" />
+    <item
+        android:id="@+id/item_atividade"
+        android:title="@string/minhas_atividades" />
+</menu>
